@@ -3,18 +3,65 @@
   <head>
     <meta charset="utf-8">
     <title>Odin Recipes</title>
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="header">
       <h1><span class="highlight">Let's,</span> Cook!</h1>
-      <h2>Odin Recipes</h2>
+        <h2>Odin Recipes</h2>
+    </div>
+
+    <div class="nav">
+      <ul>
+        <li><a href="index.html" class="current">Home</a></li>
+        <div class="dropdown">
+          <li><a href="#" class="dropdown-link">Recipes</a></li>
+            <div class="dropdown-content">
+              <a href="./recipes/lasagna.html" target="_blank">Creamy Spinach ang Mushroom Lasagna</a>
+              <a href="./recipes/japchae.html" target="_blank">Japchae</a>
+              <a href="./recipes/porkbbq.html" target="_blank">BBQ Pork Skewers</a>
+            </div>
+        </div>
+      </ul>
     </div>
     
-    <ul>
-      <li><a href="./recipes/lasagna.html" target="_blank">Creamy Spinach and Mushroom Lasagna</a></li>
-      <li><a href="./recipes/japchae.html" target="_blank">Japchae</a></li>
-      <li><a href="./recipes/porkbbq.html" target="_blank">Filipino BBQ Pork Skewers</a></li>
-    </ul>
+    <div class="content">
+      <ul>
+      <div class="card">
+        <div class="left">
+          <a href="./recipes/lasagna.html">
+          <img src="./images/lasagna.jpg" style="width: 200px; height: 200px"></a>
+        </div>
+        <div class="right">
+          <li><a href="./recipes/lasagna.html" target="_blank">Creamy Spinach and Mushroom Lasagna</a></li>
+          <p>This Creamy Spinach and Mushroom Lasagna has layers of sautéed spinach and mushrooms mixed together with a ricotta cheese mixture and a drool-worthy white sauce.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="left">
+        <a href="./recipes/japchae.html">
+            <img src="./images/japchae.jpg" style="width: 200px; height: 200px">
+        </a>
+        </div>
+        <div class="right">
+        <li><a href="./recipes/japchae.html" target="_blank">Japchae</a></li>
+        <p>Japchae, sweet potato starch noodles stir fried with vegetables and meat, is one of Korea’s best-loved dishes.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="left">
+          <a href="./recipes/porkbbq.html">
+          <img src="./images/bbq.jpg" style="width: 200px; height: 200px;">
+          </a>
+        </div>
+        <div class="right">
+        <li><a href="./recipes/porkbbq.html" target="_blank">BBQ Pork Skewers</a></li>
+        <p>Tender pieces of flavorful pork glazed with a sweet and savory sauce and fresh off the grill–these pork BBQ skewers are so mouth-watering that you’ll want to hoard them all on your plate. It’s no wonder these are a Filipino delicacy.</p>
+        </div>
+      </div>
+      </ul>
+    </div>
   </body>
 </html>

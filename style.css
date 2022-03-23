@@ -1,11 +1,156 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
 body{
-  background-color: rgb(253, 253, 253);
+  background-color: #FFF5CB;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin: 0;
   padding: 0;
 }
+
+/* Header */
+
 .header {
     text-align: center;
-    background-color: red;
+    background-color: #F1C40F;
     color: white;
+    padding: 50px;
+    
+}
+.header h1 {
+  font-size: 60px;
+}
+.header h1 .highlight {
+  color: #333;
+}
+.header h2 {
+  font-size: 16px;
+  color: #333;
+  font-style: italic;
+}
+
+/* Navbar*/
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  padding: 8px;
+}
+
+.nav li {
+  display: inline-block;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.nav a:hover:not(.current) {
+  color: #F1C40F;
+}
+
+
+.nav .current {
+  color: #F1C40F;
+}
+
+.nav .dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: #fff9e3;
+  min-width: 160px;
+  display: none;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+.dropdown-content a:hover {
+  background-color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Content */
+
+.content {
+  margin: auto;
+  width: 100%;
+  padding: 20px;
+}
+
+.content ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.content a {
+  text-decoration: none;
+  color: rgb(119, 109, 3);
+  font-size: 20px;
+  font-style: italic;
+}
+
+.content a:hover {
+  color: #F1C40F;
+}
+.card {
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  width: 100%;
+  box-shadow: 0 0 2px lightgray;
+}
+
+.card .left img {
+  float: left;
+  width: 20%;
+
+}
+.card .right {
+  float: right;
+  width: 70%;
+  text-align: center;
+}
+
+
+.card .right p {
+  padding: 20px;
+  color: #333;
+}
+
+.card:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .card .left img {
+    float: none;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .card .right {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
 }
