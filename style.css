@@ -112,7 +112,7 @@ body{
 
 .content h1, .content h3, .content h4 {
   font-style: Italic;
-  color: rgb(119, 109, 3);
+  color: #F1C40F;
 }
 .content h1, .content p {
   text-align: center;
