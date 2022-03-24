@@ -109,6 +109,25 @@ body{
 .content a:hover {
   color: #F1C40F;
 }
+
+.content h1, .content h3, .content h4 {
+  font-style: Italic;
+  color: rgb(119, 109, 3);
+}
+.content h1, .content p {
+  text-align: center;
+}
+
+
+.content img {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+  padding: 5px;
+}
+
 .card {
   background-color: white;
   padding: 20px;
